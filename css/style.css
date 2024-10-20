@@ -1,0 +1,740 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter", sans-serif;
+    background-color: var(--WhiteBG);
+}
+:root{
+    
+--LimeGreen: hsl(163, 72%, 41%);
+--BrightRed: hsl(356, 69%, 56%);
+--Facebook: hsl(208, 92%, 53%);
+--Twitter: hsl(203, 89%, 53%);
+--Instagram:hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+--YouTube: hsl(348, 97%, 39%);
+--Toggle:hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+--toggle: hsl(230, 22%, 74%);
+--VeryDarkBlueBG: hsl(230, 17%, 14%);
+--VeryDarkBlueTopBGPattern: hsl(232, 19%, 15%);
+--DarkDesaturatedBlueCardBG: hsl(228, 28%, 20%);
+--DesaturatedBlueText: hsl(228, 34%, 66%);
+--WhiteText: hsl(0, 0%, 100%);
+--WhiteBG: hsl(0, 0%, 100%);
+--VeryPaleBlueTopBGPattern: hsl(225, 100%, 98%);
+--LightGrayishBlueCardBG: hsl(227, 47%, 96%);
+--DarkGrayishBlueText: hsl(228, 12%, 44%);
+--VeryDarkBlueText: hsl(230, 17%, 14%);
+}
+/* start-header */
+header {
+    background-color: var(--VeryPaleBlueTopBGPattern);
+    height: 300px;
+}
+header .container{
+    padding: 40px 80px;
+}
+header .container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container nav .heade-left h1{
+    font-family:"Inter" ;
+    font-weight: 700;
+    color: var(--VeryDarkBlueTopBGPattern);
+}
+header .container nav .heade-left p{
+    font-family:"Inter" ;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--DarkGrayishBlueText);
+}
+header .container nav .dark-mode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+header .container nav .dark-mode .mode{
+    display: inline-block;
+    font-family:"Inter" ;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--DarkGrayishBlueText);
+}
+header .container nav .dark-mode .toggel{
+    width: 50px;
+    height: 25px;
+    border-radius: 20px;
+    position: relative;
+    background-color: var(--toggle);
+    cursor: pointer;
+    transition: all 0.8s;
+}
+header .container nav .dark-mode .toggel:hover{
+    background: linear-gradient(to right ,hsl(210, 78%, 56%) , hsl(146, 68%, 55%));
+}
+header .container nav .dark-mode .toggel #check{
+    width: 100%;
+    opacity: 0;
+    transition: all 0.8s ;
+    cursor: pointer;
+}
+header .container nav .dark-mode .toggel #check:checked + .circle{
+    transform: translateX(-24px);
+}
+header .container nav .dark-mode .toggel .circle{
+    position: absolute;
+    top: 3px;
+    right:3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--WhiteBG);
+    transition: all 0.8s;
+}
+/* end-header */
+/* start-main */
+main .container{
+    margin: 0 80px;
+    position: relative;
+    bottom: 100px;
+}
+main .container .social-followers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
+main .container .social-followers .facebook{
+    border-radius:5px;
+    border-top:5px solid var(--Facebook);
+    background-color: var(--LightGrayishBlueCardBG);
+    text-align: center;
+    padding: 20px;
+    width: calc(100% / 4);
+}
+main .container .social-followers .facebook .icon-facebook{
+    margin: 0px 5px -3px 0;
+    width: 15px;
+}
+main .container .social-followers .facebook .ntn{
+    font-family:"Inter" ;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--DarkGrayishBlueText);
+}
+main .container .social-followers .facebook h2{
+    font-family:"Inter" ;
+    font-weight: 700;
+    color: var(--VeryDarkBlueTopBGPattern);
+    margin: 30px 0 10px;
+    font-size: 40px;
+}
+main .container .social-followers .facebook p{
+    font-family:"Inter" ;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--DarkGrayishBlueText);
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}
+main .container .social-followers .facebook .tody{
+    font-family:"Inter" ;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--LimeGreen);
+}
+main .container .social-followers .twitter{
+    border-radius:5px;
+    border-top:5px solid var(--Facebook);
+    background-color: var(--LightGrayishBlueCardBG);
+    text-align: center;
+    padding: 20px;
+    width: calc(100% / 4);
+}
+main .container .social-followers .twitter .icon-twitter{
+    margin: 0px 5px -3px 0;
+    width: 15px;
+}
+main .container .social-followers .twitter .ntn{
+    font-family:"Inter" ;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--DarkGrayishBlueText);
+}
+main .container .social-followers .twitter h2{
+    font-family:"Inter" ;
+    font-weight: 700;
+    color: var(--VeryDarkBlueTopBGPattern);
+    margin: 30px 0 10px;
+    font-size: 40px;
+}
+main .container .social-followers .twitter p{
+    font-family:"Inter" ;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--DarkGrayishBlueText);
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}
+main .container .social-followers .twitter .tody{
+    font-family:"Inter" ;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--LimeGreen);
+}
+main .container .social-followers .instgram{
+   position: relative;
+    background-color: var(--LightGrayishBlueCardBG);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    width: calc(100% / 4);
+}
+main .container .social-followers .instgram .icon-instagram{
+    margin: 0px 5px -3px 0;
+    width: 15px;
+}
+main .container .social-followers .instgram .border-top{
+    background: linear-gradient(to right ,hsl(37, 97%, 70%) , hsl(329, 70%, 58%));
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+
+main .container .social-followers .instgram .ntn{
+    font-family:"Inter" ;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--DarkGrayishBlueText);
+}
+main .container .social-followers .instgram h2{
+    font-family:"Inter" ;
+    font-weight: 700;
+    color: var(--VeryDarkBlueTopBGPattern);
+    margin: 30px 0 10px;
+    font-size: 40px;
+}
+main .container .social-followers .instgram p{
+    font-family:"Inter" ;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--DarkGrayishBlueText);
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}
+main .container .social-followers .instgram .tody{
+    font-family:"Inter" ;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--LimeGreen);
+}
+main .container .social-followers .youtube{
+    border-radius:5px;
+    border-top:5px solid var(--YouTube);
+    background-color: var(--LightGrayishBlueCardBG);
+    text-align: center;
+    padding: 20px;
+    width: calc(100% / 4);
+}
+main .container .social-followers .youtube .icon-youtube{
+    margin: 0px 5px -3px 0;
+    width: 15px;
+}
+main .container .social-followers .youtube .ntn{
+    font-family:"Inter" ;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--DarkGrayishBlueText);
+}
+main .container .social-followers .youtube h2{
+    font-family:"Inter" ;
+    font-weight: 700;
+    color: var(--VeryDarkBlueTopBGPattern);
+    margin: 30px 0 10px;
+    font-size: 40px;
+}
+main .container .social-followers .youtube p{
+    font-family:"Inter" ;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--DarkGrayishBlueText);
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}
+main .container .social-followers .youtube .tody{
+    font-family:"Inter" ;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--YouTube);
+}
+main .container .overviews h2{
+    margin: 60px 0 20px 0;
+    font-family:"Inter" ;
+    font-weight: 700;
+    color: rgb(217, 219, 221);
+    font-size: 40px;
+}
+
+main .container .overviews .overview-today{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    margin: 30px 0 40px;
+}
+main .container .overviews .overview-today .page-views {
+    background-color: var(--LightGrayishBlueCardBG);
+    width: calc(100% / 4);
+    height: 150px;
+    padding: 20px;
+    border-radius: 5px;
+}
+main .container .overviews .overview-today .page-views .row_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} main .container .overviews .overview-today .page-views .row_1 .pag{
+    font-family:"Inter" ;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--DarkGrayishBlueText);
+}
+main .container .overviews .overview-today .page-views .row_2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+} 
+main .container .overviews .overview-today .page-views .row_2 h3{
+    font-family:"Inter" ;
+    font-weight: 700;
+    color: var(--VeryDarkBlueTopBGPattern);
+    font-size: 30px;
+}
+main .container .overviews .overview-today .page-views .row_2 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .container .overviews .overview-today .page-views .row_2 div .persent{
+    color: var(--LimeGreen);
+}
+
+main .container .overviews .overview-today .likes {
+    background-color: var(--LightGrayishBlueCardBG);
+    width: calc(100% / 4);
+    height: 150px;
+    padding: 20px;
+    border-radius: 5px;
+}
+main .container .overviews .overview-today .likes .row_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} main .container .overviews .overview-today .likes .row_1 .pag{
+    font-family:"Inter" ;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--DarkGrayishBlueText);
+}
+main .container .overviews .overview-today .likes .row_2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+} 
+main .container .overviews .overview-today .likes .row_2 h3{
+    font-family:"Inter" ;
+    font-weight: 700;
+    color: var(--VeryDarkBlueTopBGPattern);
+    font-size: 30px;
+}
+main .container .overviews .overview-today .likes .row_2 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .container .overviews .overview-today .likes .row_2 div .persent{
+    color: var(--BrightRed);
+}
+
+main .container .overviews .overview-today .likes_1 {
+    background-color: var(--LightGrayishBlueCardBG);
+    width: calc(100% / 4);
+    height: 150px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+main .container .overviews .overview-today .likes_1 .row_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} main .container .overviews .overview-today .likes_1 .row_1 .pag{
+    font-family:"Inter" ;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--DarkGrayishBlueText);
+}
+main .container .overviews .overview-today .likes_1 .row_2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+} 
+main .container .overviews .overview-today .likes_1 .row_2 h3{
+    font-family:"Inter" ;
+    font-weight: 700;
+    color: var(--VeryDarkBlueTopBGPattern);
+    font-size:30px;
+}
+main .container .overviews .overview-today .likes_1 .row_2 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .container .overviews .overview-today .likes_1 .row_2 div .persent{
+    color: var(--LimeGreen);
+}
+main .container .overviews .overview-today .profileviews {
+    background-color: var(--LightGrayishBlueCardBG);
+    width: calc(100% / 4);
+    height: 150px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+main .container .overviews .overview-today .profileviews .row_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} main .container .overviews .overview-today .profileviews .row_1 .pag{
+    font-family:"Inter" ;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--DarkGrayishBlueText);
+}
+main .container .overviews .overview-today .profileviews .row_2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+} 
+main .container .overviews .overview-today .profileviews .row_2 h3{
+    font-family:"Inter" ;
+    font-weight: 700;
+    color: var(--VeryDarkBlueTopBGPattern);
+    font-size: 30px;
+}
+main .container .overviews .overview-today .profileviews .row_2 div{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+main .container .overviews .overview-today .profileviews .row_2 div .persent{
+    color: var(--LimeGreen);
+}
+
+main .container .overviews .overview-today .retweets {
+    background-color: var(--LightGrayishBlueCardBG);
+    width: calc(100% / 4);
+    height: 150px;
+    padding: 20px;
+    border-radius: 5px;
+}
+main .container .overviews .overview-today .retweets .row_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} main .container .overviews .overview-today .retweets .row_1 .pag{
+    font-family:"Inter" ;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--DarkGrayishBlueText);
+}
+main .container .overviews .overview-today .retweets .row_2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+} 
+main .container .overviews .overview-today .retweets .row_2 h3{
+    font-family:"Inter" ;
+    font-weight: 700;
+    color: var(--VeryDarkBlueTopBGPattern);
+    font-size:30px;
+}
+main .container .overviews .overview-today .retweets .row_2 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .container .overviews .overview-today .retweets .row_2 div .persent{
+    color: var(--LimeGreen);
+}
+
+main .container .overviews .overview-today .likes_2 {
+    background-color: var(--LightGrayishBlueCardBG);
+    width: calc(100% / 4);
+    height: 150px;
+    padding: 20px;
+    border-radius: 5px;
+}
+main .container .overviews .overview-today .likes_2 .row_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} main .container .overviews .overview-today .likes_2 .row_1 .pag{
+    font-family:"Inter" ;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--DarkGrayishBlueText);
+}
+main .container .overviews .overview-today .likes_2 .row_2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+} 
+main .container .overviews .overview-today .likes_2 .row_2 h3{
+    font-family:"Inter" ;
+    font-weight: 700;
+    color: var(--VeryDarkBlueTopBGPattern);
+    font-size: 30px;
+}
+main .container .overviews .overview-today .likes_2 .row_2 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .container .overviews .overview-today .likes_2 .row_2 div .persent{
+    color: var(--LimeGreen);
+}
+
+main .container .overviews .overview-today .likes_3 {
+    background-color: var(--LightGrayishBlueCardBG);
+    width: calc(100% / 4);
+    height: 150px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+main .container .overviews .overview-today .likes_3 .row_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} main .container .overviews .overview-today .likes_3 .row_1 .pag{
+    font-family:"Inter" ;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--DarkGrayishBlueText);
+}
+main .container .overviews .overview-today .likes_3 .row_2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+} 
+main .container .overviews .overview-today .likes_3 .row_2 h3{
+    font-family:"Inter" ;
+    font-weight: 700;
+    color: var(--VeryDarkBlueTopBGPattern);
+    font-size: 30px;
+}
+main .container .overviews .overview-today .likes_3 .row_2 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .container .overviews .overview-today .likes_3 .row_2 div .persent{
+    color: var(--BrightRed);
+}
+main .container .overviews .overview-today .totalviews {
+    background-color: var(--LightGrayishBlueCardBG);
+    width: calc(100% / 4);
+    height: 150px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+main .container .overviews .overview-today .totalviews .row_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} main .container .overviews .overview-today .totalviews .row_1 .pag{
+    font-family:"Inter" ;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--DarkGrayishBlueText);
+}
+main .container .overviews .overview-today .totalviews .row_2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+} 
+main .container .overviews .overview-today .totalviews .row_2 h3{
+    font-family:"Inter" ;
+    font-weight: 700;
+    color: var(--VeryDarkBlueTopBGPattern);
+    font-size: 30px;
+}
+main .container .overviews .overview-today .totalviews .row_2 div{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+main .container .overviews .overview-today .totalviews .row_2 div .persent{
+    color: var(--BrightRed);
+}
+/* end-main */
+@media(max-width:768px){
+    main .container .social-followers {
+        gap: 50px;
+        flex-wrap: wrap;
+      }
+    main .container .social-followers .facebook {
+        width: calc(90% / 2);
+      }
+      main .container .social-followers .twitter {
+        width: calc(90% / 2);
+      }
+      main .container .social-followers .instgram {
+        width: calc(90% / 2);
+      }
+      main .container .social-followers .youtube {
+        width: calc(90% / 2);
+      }
+      main .container .overviews .overview-today {
+        gap: 50px;
+        flex-wrap: wrap;
+      }
+      main .container .overviews .overview-today .page-views {
+        width: calc(90% / 2);
+      }
+      main .container .overviews .overview-today .likes {
+        width: calc(90% / 2);
+      }
+      main .container .overviews .overview-today .likes_1 {
+        width: calc(90% / 2);
+      }
+      main .container .overviews .overview-today .profileviews {
+        width: calc(90% / 2);
+      }
+      main .container .overviews .overview-today .retweets {
+        width: calc(90% / 2);
+      }
+      main .container .overviews .overview-today .likes_2 {
+        width: calc(90% / 2);
+      }
+      main .container .overviews .overview-today .likes_3 {
+        width: calc(90% / 2);
+      }
+      main .container .overviews .overview-today .totalviews {
+        width: calc(90% / 2);
+      }
+
+}
+@media(max-width:480px){
+    h1 {
+        font-size:25px;
+        margin: 0.67em 0px;
+      }
+    header .container nav .dark-mode .toggel {
+        width: 66px;
+      }
+      header .container nav {
+        flex-wrap: wrap;
+      }
+      header .container nav .dark-mode {
+        gap: 181px;
+        margin: 30px 0;
+      }
+      main .container {
+        bottom: 85px;
+      }
+    main .container .social-followers .facebook {
+        width: calc(100% / 1);
+      }
+      main .container .social-followers .twitter {
+        width: calc(100% / 1);
+      }
+      main .container .social-followers .instgram {
+        width: calc(100% / 1);
+      }
+      main .container .social-followers .youtube {
+        width: calc(100% / 1);
+      }
+      main .container .overviews h2 {
+        font-size: 38px;
+      }
+      main .container .overviews .overview-today .page-views {
+        width: calc(100% / 1);
+      }
+      main .container .overviews .overview-today .likes {
+        width: calc(100% / 1);
+      }
+      main .container .overviews .overview-today .likes_1 {
+        width: calc(100% / 1);
+      }
+      main .container .overviews .overview-today .profileviews {
+        width: calc(100% / 1);
+      }
+      main .container .overviews .overview-today .retweets {
+        width: calc(100% / 1);
+      }
+      main .container .overviews .overview-today .likes_2 {
+        width: calc(100% / 1);
+      }
+      main .container .overviews .overview-today .likes_3 {
+        width: calc(100% / 1);
+      }
+      main .container .overviews .overview-today .totalviews {
+        width: calc(100% / 1);
+      }
+
+}
+@media(max-width:375px){
+    header .container {
+        padding: 40px 27px 0px;
+      }
+      main .container {
+        margin: 0 27px;
+      }
+      header .container nav .dark-mode .toggel {
+        width: 50px;
+      }
+}
+@media(max-width:320px){
+    h1 {
+        font-size: 23px;
+      }
+      header .container nav .dark-mode {
+        gap: 136px;
+      }
+      main .container .overviews h2 {
+        font-size: 33px;
+      }
+}
+@media(max-width:240px){
+    h1 {
+        font-size: 15px;
+      }
+      header .container nav .dark-mode {
+        gap: 63px;
+      }
+      main .container .overviews h2 {
+        font-size: 22px;
+      }
+}
